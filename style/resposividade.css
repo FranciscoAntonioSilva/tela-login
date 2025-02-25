@@ -32,10 +32,6 @@
     #formulario h1 {
         margin-bottom: 30px;
     }
-
-    .botao {
-        height: 50px;
-    }
 }
 
 /*telas grandes*/
@@ -64,10 +60,6 @@
     }
 
     .campo input {
-        height: 50px;
-    }
-
-    .botao {
         height: 50px;
     }
 }
