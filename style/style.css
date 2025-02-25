@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+/*Versão mobile first*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    /*Cores primárias*/
+    --primary: #2C97D0;
+    --primary01: #165577;
+    --primary02: #39BAFE;
+    --primary03: #9CD3DA;
+}
+
+/*Configurações gerais e de posicionamento*/
+* {
+    font-family: "Roboto", serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary);
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    background-color: var(--primary); 
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s ease, height 0.2s ease;
+}
+
+section#imagem {
+    background: var(--primary03) url(../image/imagem-login.jpg) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 30%;
+}
+
+section#formulario {
+    background-color: white;
+    width: 100%;
+    height: 70%;
+    padding: 30px;
+    border-top-left-radius: 40px;
+}
+
+#formulario h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+#formulario p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.campo {
+    margin: 10px 0px;
+}
+
+.campo input {
+    background-color: #ECECEC;
+    width: 100%;
+    height: 40px;
+    padding-left: 16px;
+    border: none;
+    border-radius: 10px;
+}
+
+.campo input:focus-within {
+    background-color: white;
+}
+
+.campo input[type=checkbox] {
+    height: 12px;
+    width: 12px;
+}
+
+.campo #nome {
+    font-size: 0.9em;
+}
+
+.campo a {
+    color: var(--primary01);
+    text-decoration: none;
+    font-size: 0.9em;
+    float: right;
+}
+
+.botao {
+    background-color: var(--primary);
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    transition: 100ms ease;
+    cursor: pointer;
+}
+
+.botao-voltar {
+    background-color: white;
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 100ms ease;
+    cursor: pointer;
+}
+
+.botao:hover, .botao-voltar:hover {
+    background-color: var(--primary01);
+    color: white;
+    border: none;
+}
+
+.botao:active, .botao-voltar:active {
+    background-color: #113E56;
+}
+
+.cadastre-se, .fazer-login {
+    font-size: 0.9em;
+    margin: 10px 0px 20px 0px;
+}
+
+.cadastre-se a, .fazer-login a {
+    color: var(--primary01);
+    text-decoration: none;
+}
+
+.fazer-login {
+    text-align: center;
+}
+
+.links {
+    text-align: center;
+}
+
+.links p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.links img {
+    height: 25px;
+    margin: 16px 8px;
+}

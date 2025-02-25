@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+/*Tela médias*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: linear-gradient(to top left, #9CD3DA, #2C97D0);
+    }
+    
+    .container {
+        width: 80%;
+        height: 500px;
+    }
+
+    section#imagem {
+        float: left;
+        width: 40%;
+        height: 100%;
+    }
+
+    section#formulario {
+        float: right;
+        width: 60%;
+        height: 100%;
+        padding: 30px;
+        border-top-left-radius: 0px;
+    }
+
+    #formulario h1 {
+        margin-bottom: 30px;
+    }
+}
+
+/*telas grandes*/
+@media screen and (min-width: 992px) {
+    body {
+        background-image: linear-gradient(to top left, #9CD3DA, #2C97D0);
+    }
+
+    .container {
+        width: 60%;
+        height: 500px;
+    }
+
+    section#imagem {
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+    section#formulario {
+        float: left;
+        width: 50%;
+        height: 100%;
+        padding: 30px;
+        border-top-left-radius: 0px;
+    }
+
+    #formulario h1 {
+        margin-top: 30px;
+    }
+}

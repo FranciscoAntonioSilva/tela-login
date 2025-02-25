@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    section#imagem {
+        float: right;
+    }
+
+    section#formulario {
+        float: left;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    section#imagem {
+        float: right;
+    }
+
+    section#formulario {
+        float: left;
+    }
+}

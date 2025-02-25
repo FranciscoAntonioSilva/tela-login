@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/resposividade.css">
+</head>
+<body>
+    <main>
+        <article class="container">
+            <section id="imagem">
+            
+            </section>
+            <section id="formulario">
+                <h1>Login</h1>
+                <form action="cadastro.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <label for="user">Usuário</label><br>
+                        <input type="text" name="user" id="user" placeholder="nome de usuário" autocomplete="username">
+                    </div>
+                    <div class="campo">
+                        <label for="senha">Senha</label><br>
+                        <input type="password" name="senha" id="senha" placeholder="senha" autocomplete="current-password">
+                    </div>
+                    <div class="campo">
+                        <input type="checkbox" name="lembre" id="lembre"><label for="lembre" id="nome">Lembre-me</label>
+                        <a href="recuperar-senha.html" target="_self">Esqueceu a senha?</a>
+                    </div>
+                </form>
+                <button class="botao">Entrar</button>
+                <p class="cadastre-se">Não tem conta? <a href="cadastro.html" target="_self">Cadastre-se</a></p>
+                <div class="links">
+                    <p>Fazer login com</p>
+                    <a href="#"><img src="image/google_icon-icons.com_62736.ico" alt="Google"></a>
+                    <a href="#"><img src="image/facebook_logo_icon_147291.ico" alt="Facebook"></a>
+                    <a href="#"><img src="image/github-logo_icon-icons.com_73546.ico" alt="GitHub"></a>
+                    <!--Fazer a alteração do icone do github-->
+                </div>
+            </section>
+        </article>
+    </main>
+</body>
+</html>
